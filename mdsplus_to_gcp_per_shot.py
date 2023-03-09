@@ -155,7 +155,7 @@ foo = mdsplus_to_gcp_per_shot(project_id, instance_id, table_id)
 #get MDSPlus shot table data - unknown size, unknown dims
 shot = 12345
 tree_name = "my_tree"
-#use subtrees var if known, skip otherwise
+#use subtrees var if known, skip otherwise; pass None for all subtrees
 subtrees = ["subtree1", "subtree2"]
 
 json_data = foo.tree_to_json(shot, tree_name, subtrees=None)
